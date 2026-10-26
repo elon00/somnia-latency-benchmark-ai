@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "somnia-latency-benchmark-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Somnia Network",
+        "PROJECT_TICKER": "SOMLAT"
+      },
+      "tools": [
+        {
+          "name": "verify_somlat_invariants",
+          "description": "Verifies deterministic invariants for Somnia Latency Benchmark AI on Somnia Network."
+        },
+        {
+          "name": "execute_somlat_action",
+          "description": "Executes authenticated Dev Tool state transition."
+        }
+      ]
+    }
+  }
+}
